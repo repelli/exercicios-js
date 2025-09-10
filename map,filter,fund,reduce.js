@@ -259,7 +259,7 @@ console.log(quadrado)
 const valores = [ 100,200,50,150]
 const soma = valores.reduce((acum,valor) => acum + valor, 0)
 console.log(soma)
-*/
+
 
 //EXERCÍCIO 2
 
@@ -292,3 +292,18 @@ const totalPaginas = livros.reduce((cont, livro) => {
   }, 0);
   
   console.log("Total de páginas:", totalPaginas);
+
+  */
+
+  const carrinho =[
+{ produto: "Notebook",preco:2500},
+{ produto: "Mouse",preco:100},
+{ produto: "Teclado",preco:200},
+  ];
+  const totalProduto = carrinho.map(carrinhos => console.log("Produto: "+ carrinhos.produto + " Preço:" + carrinhos.preco))
+ 
+let total_geral = carrinho.reduce((total,soma) => total + soma.preco,0 )
+console.log(total_geral)
+
+  let  encontrar = carrinho.find( carrinhos => carrinhos.produto == "Mouse")
+  console.log(encontrar)
